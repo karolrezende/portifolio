@@ -15,7 +15,8 @@ export default {
     colors:{
       'darkpurple': '#353b5f',
       'mediumpurple': '#2F3273',
-      'lightpurple': '#3C4CA6'
+      'lightpurple': '#3C4CA6',
+      'darkBlue': '#100B1F'
     }
     },
   },

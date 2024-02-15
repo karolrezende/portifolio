@@ -21,14 +21,14 @@ const Header = () => {
             <nav className={`${menu ? 'absolute top-4 right-4 bg-white' : 'hidden'} md:flex md:bg-none p-4 md:p-0 shadow-md md:shadow-none rounded-md justify-end`}>
                 <X onClick={() => handleMenu()} className='md:hidden cursor-pointer text-right' />
                 <div className='flex flex-col md:flex-row  '>
-                    <NavLink to={'/about'} className={` uppercase font-bold ${local.pathname === '/about' ? 'text-lightpurple' : 'text-darkpurple  '} p-2`}>
+                    <NavLink to={'/about'} className={` uppercase font-bold ${local.pathname === '/about' ? 'text-white/70' : 'text-white  '} p-2`}>
                         Sobre mim
                     </NavLink>
-                    <NavLink to={'/projects'} className={` uppercase font-bold ${local.pathname === '/projects' ? 'text-lightpurple' : 'text-darkpurple '} p-2`}>
+                    <NavLink to={'/projects'} className={` uppercase font-bold ${local.pathname === '/projects' ? 'text-white/70' : 'text-white '} p-2`}>
                         Projetos
 
                     </NavLink>
-                    <NavLink to={'/contact'} className={` uppercase font-bold ${local.pathname === '/contact' ? 'text-lightpurple' : 'text-darkpurple'} p-2`}>
+                    <NavLink to={'/contact'} className={` uppercase font-bold ${local.pathname === '/contact' ? 'text-white/70' : 'text-white'} p-2`}>
                         Contato
                     </NavLink>
                 </div>

@@ -8,3 +8,6 @@
   padding: 0;
   box-sizing: border-box;
 }
+.bgSky{
+  background: radial-gradient(ellipse at bottom, #100B1F 0%,#090a0f 100%);
+}
