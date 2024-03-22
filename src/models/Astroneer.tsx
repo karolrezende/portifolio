@@ -5,7 +5,7 @@ import { Vector3 } from 'three';
 
 const Astroneer = ({isRotating, astroneerPosition, astroneerScale }) => {
     const {nodes, materials, animations} = useGLTF(astroneerScene)
-    const {actions}=useAnimations(animations)
+    const {actions} = useAnimations(animations)
     console.log(actions)
     const astronautRef = useRef();
     const moveSpeed = 0.1; // Velocidade de movimento do astronauta
@@ -14,7 +14,6 @@ const Astroneer = ({isRotating, astroneerPosition, astroneerScale }) => {
     useEffect(() => {
       const handleKeyDown = (event:any) => {
         let newPosition = new Vector3().copy(astronautRef.current.position);
-  
         switch (event.key) {
           case "ArrowUp":
           case "w":
